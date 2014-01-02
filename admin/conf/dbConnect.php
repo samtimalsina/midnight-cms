@@ -21,11 +21,11 @@ class DatabaseConnection {
 		$this->password = "fudgedelic";
     }*/
 	//if($_SERVER['HTTP_HOST']=='localhost'){
-		$this->database = "fudgedelic2";
-		$this->database_name = "fudgedelic2";
+		$this->database = "midnight";
+		$this->database_name = "midnight";
 		$this->hostname = "localhost";
-		$this->username = "root";
-		$this->password = "";
+		$this->username = "midnight";
+		$this->password = "midnight";
 	//}
     }
     function serverConnection(){

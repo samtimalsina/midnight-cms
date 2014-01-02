@@ -1,5 +1,5 @@
 	<div id="footer" class="span-24 last prepend-top">
-		<p>Midnight CMS Version 2.0 | Copyright <a href="http://qualia.com.np" target="_blank">Qualia E-Groups</a></p>
+		<p>Midnight CMS Version 2.0 | Copyright <a href="http://shyamtimalsina.com.np/midnight-cms" target="_blank">Sam Timalsina</a></p>
 	</div>
 </div>
 </body>

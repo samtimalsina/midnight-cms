@@ -26,7 +26,7 @@
                                             widgets.type = 'tools'");
                     while($widget=mysql_fetch_array($query)){
 					?>
-                    <li><a href="<?php echo BASE_URL."tools/".cut($widget['name']);?>"><span style="background:url(<?php echo WEB_URL;?>admin/website_specifics/<?php echo cut($widget['name'])."/".$widget['logo'];?>)  <?php if(isset($_GET['widget'])){if (cut($widget['name'])==$_GET['widget']) echo "right"; else echo "left";} else echo "left";?>  bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span><?php echo $widget['name'];?></a></li>
+                    <li><a href="<?php echo BASE_URL."tools/".cut($widget['name']);?>"><span style="background:url(<?php echo BASE_URL;?>website_specifics/<?php echo cut($widget['name'])."/".$widget['logo'];?>)  <?php if(isset($_GET['widget'])){if (cut($widget['name'])==$_GET['widget']) echo "right"; else echo "left";} else echo "left";?>  bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span><?php echo $widget['name'];?></a></li>
                     <?php } ?>
                     
                     <?php /* <li class=""><a href="<?php echo BASE_URL;?>usermanagement"><span style="background:url(<?php echo WEB_URL;?>images/widgets/password.gif) left bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span>User Management</a></li>
@@ -57,7 +57,7 @@
                                             adminspecific_tbl.tools = 'yes'");
                     while($widget=mysql_fetch_array($query)){
 					?>
-                    <li><a href="<?php echo BASE_URL."tools/".cut($widget['name']);?>"><span style="background:url(<?php echo WEB_URL;?>admin/website_specifics/<?php echo cut($widget['name'])."/".$widget['logo'];?>)  <?php if(isset($_GET['widget'])){if (cut($widget['name'])==$_GET['widget']) echo "right"; else echo "left";} else echo "left";?>  bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span><?php echo $widget['name'];?></a></li>
+                    <li><a href="<?php echo BASE_URL."tools/".cut($widget['name']);?>"><span style="background:url(<?php echo BASE_URL;?>website_specifics/<?php echo cut($widget['name'])."/".$widget['logo'];?>)  <?php if(isset($_GET['widget'])){if (cut($widget['name'])==$_GET['widget']) echo "right"; else echo "left";} else echo "left";?>  bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span><?php echo $widget['name'];?></a></li>
                     <?php } ?>
                     
                     <?php /* <li class=""><a href="<?php echo BASE_URL;?>usermanagement"><span style="background:url(<?php echo WEB_URL;?>images/widgets/password.gif) left bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span>User Management</a></li>
@@ -86,7 +86,7 @@
                     while($widget=mysql_fetch_array($query)){
                 ?>
             	<li <?php if($this_widget==1) echo "class='first'"; else if($this_widget==$num_of_widgets) echo "class='last'";?>>
-                	<a href="<?php echo BASE_URL."widgets/".cut($widget['name']);?>"><span style="background:url(<?php echo WEB_URL;?>images/widgets/<?php echo $widget['logo'];?>) <?php if(isset($_GET['widget'])){if (cut($widget['name'])==$_GET['widget']) echo "right"; else echo "left";} else echo "left";?> bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span><?php echo $widget['name'];?></a>
+                	<a href="<?php echo BASE_URL."widgets/".cut($widget['name']);?>"><span style="background:url(<?php echo BASE_URL;?>images/widgets/<?php echo $widget['logo'];?>) <?php if(isset($_GET['widget'])){if (cut($widget['name'])==$_GET['widget']) echo "right"; else echo "left";} else echo "left";?> bottom; height:32px; width:32px; display:block; float:left; margin-top:4px;">&nbsp;</span><?php echo $widget['name'];?></a>
                 </li>
                 <?php $this_widget++;} ?>
             </ul>

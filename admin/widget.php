@@ -14,7 +14,7 @@
             $widget_description=$widget['description'];
         ?>        
     	<div class="span-18 last prepend-top" id="widget_heading">
-        	<span style="background:url(<?php echo WEB_URL;?>images/widgets/<?php echo $widget_logo;?>) top; margin-right:10px;" class="widget_icon big main">&nbsp;</span><h1><?php echo $widget_name;?></h1>
+        	<span style="background:url(<?php echo BASE_URL;?>images/widgets/<?php echo $widget_logo;?>) top; margin-right:10px;" class="widget_icon big main">&nbsp;</span><h1><?php echo $widget_name;?></h1>
             <p><?php echo $widget_description;?></p>
             <div class="span-18 last">        	
         </div>

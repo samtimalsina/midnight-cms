@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tool>
+	<tool_details>
+		<tool_name>Email Management</tool_name>
+        <tool_logo>Images/users.gif</tool_logo>
+        <tool_info>Manage Emails.</tool_info>
+		<version>1.0</version>
+		<author>Pramod Rishal</author>
+        <tool_type>tools</tool_type>
+        <rights>all</rights>
+    </tool_details>
+    <functions>
+        <function>
+			<function_name>Add Email Address</function_name>
+			<function_type>form</function_type>
+		</function>
+        
+		<function>
+			<function_name>Manage Template</function_name>
+			<function_type>form</function_type>			
+		</function>
+		
+		<function>
+			<function_name>Create Email</function_name>
+			<function_type>form</function_type>
+		</function>
+        
+        <function>
+			<function_name>Legends</function_name>
+			<function_type>form</function_type>
+		</function>
+        
+        <function>
+			<function_name>Send Email</function_name>
+			<function_type>form</function_type>
+		</function>
+        
+	</functions>
+</tool>

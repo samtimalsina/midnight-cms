@@ -1,0 +1,39 @@
+#Options +FollowSymlinks
+RewriteEngine On
+ErrorDocument 404 /404.php
+
+
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)$ widget.php?widget=$1
+RewriteRule ^tools/([a-zA-Z0-9_-]+)$ tools.php?tool=$1
+RewriteRule ^tools/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ tools.php?tool=$1&function=$2
+RewriteRule ^tools/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ tools.php?tool=$1&function=$2&level=$3&user=$4
+RewriteRule ^tools/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ tools.php?tool=$1&function=$2&level=$3&user=$5&manageaccess=$4
+#RewriteRule ^tools/([a-zA-Z0-9_-]+)$ website_specifics/$1/index.php
+#RewriteRule ^tools/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ website_specifics/$1/$2/index.php
+
+
+
+#RewriteRule ^tools/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ website_specifics/$1/$2/$3/index.php?user=$4
+#RewriteRule ^tools/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ website_specifics/$1/$2/$3/index.php?manageaccess=$4&user=$5
+
+RewriteRule changepassword$ website_specifics/usermanagement/change_password.php
+RewriteRule usermanagement$ website_specifics/usermanagement/user_management.php
+RewriteRule usermanagement/adduser$ website_specifics/usermanagement/user_management.php?action=adduser
+RewriteRule usermanagement/accesslevel$ website_specifics/usermanagement/user_management.php?action=access
+RewriteRule usermanagement/viewusers$ website_specifics/usermanagement/user_management.php?action=viewuser
+
+RewriteRule usermanagement/assignlevel/([a-zA-Z0-9_-]+)$ website_specifics/usermanagement/assign_level.php?user=$1
+RewriteRule usermanagement/assignlevel/websitecommons/([a-zA-Z0-9_-]+)$ website_specifics/usermanagement/assign_level.php?user=$1&manageaccess=websitecommons
+RewriteRule usermanagement/assignlevel/generaltools/([a-zA-Z0-9_-]+)$ website_specifics/usermanagement/assign_level.php?user=$1&manageaccess=generaltools
+#RewriteRule ^widgets/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ function.php?widget=$1&function=$2
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)/forms/([a-zA-Z0-9_-]+)$ forms.php?widget=$1&function=$2
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)/views/([a-zA-Z0-9_-]+)$ views.php?widget=$1&function=$2
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)/views/([a-zA-Z0-9_-]+)&page=([a-zA-Z0-9_-]+)$ views.php?widget=$1&function=$2&page=$3
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)/views/([a-zA-Z0-9_-]+)=([a-zA-Z0-9_-]+)$ views.php?widget=$1&function=$2&table_name=$3
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/edit/([0-9]+)$ forms.php?widget=$1&function=$2&edit_id=$3
+RewriteRule ^widgets/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/delete=([0-9]+)$ views.php?widget=$1&function=$2&table_name=$3&delete_id=$4
+RewriteRule login$ index.htm
+RewriteRule welcome$ admin.htm
+RewriteRule logout$ index.php?logout=true
+RewriteRule error$ errorpage.php
+RewriteRule ^(.*)\.htm$ $1.php [nc]

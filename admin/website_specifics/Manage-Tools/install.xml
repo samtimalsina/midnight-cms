@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tools>
+	<tool_details>
+		<tool_name>Manage Tools</tool_name>
+        <tool_logo>Images/settings.gif</tool_logo>
+        <tool_info>Install New Tools.</tool_info>
+		<version>1.0</version>
+		<author>Pramod Rishal</author>.
+        <tool_type>tools</tool_type>
+        <rights>all</rights>
+    </tool_details>
+
+
+<functions>
+        <function>
+			<function_name>Install Tools</function_name>
+			<function_type>form</function_type>
+		</function> 
+        <function>
+			<function_name>View Installed Tools</function_name>
+			<function_type>form</function_type>
+		</function> 
+</functions>
+
+</tools>

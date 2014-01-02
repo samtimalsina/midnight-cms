@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tools>
+	<tool_details>
+		<tool_name>Site Settings</tool_name>
+        <tool_logo>Images/settings.gif</tool_logo>
+        <tool_info>Manage your web page.</tool_info>
+		<version>1.0</version>
+        <tool_type>tools</tool_type>
+        <rights>all</rights>
+    </tool_details>
+    
+</tools>

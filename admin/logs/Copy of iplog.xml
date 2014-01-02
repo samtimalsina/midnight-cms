@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<ips>
+		<date>2011-10-14</date>
+		<time>8:44 PM</time>
+		<statusCode>OK</statusCode>
+		<statusMessage>OK</statusMessage>
+		<ipAddress>192.168.1.3</ipAddress>
+		<countryCode>NP</countryCode>
+		<countryName>Nepal</countryName>
+		<regionName>Bagmati</regionName>
+		<cityName>Lalitpur</cityName>
+		<zipCode>44700</zipCode>
+		<latitude>33.77</latitude>
+		<longitude>72.98</longitude>
+		<timeZone>+5.75</timeZone>
+	</ips>
+	<ips>
+		<date>2011-10-14</date>
+		<time>8:44 PM</time>
+		<statusCode>OK</statusCode>
+		<statusMessage>OK</statusMessage>
+		<ipAddress>192.168.1.3</ipAddress>
+		<countryCode>NP</countryCode>
+		<countryName>Nepal</countryName>
+		<regionName>Bagmati</regionName>
+		<cityName>Lalitpur</cityName>
+		<zipCode>44700</zipCode>
+		<latitude>33.77</latitude>
+		<longitude>72.98</longitude>
+		<timeZone>+5.75</timeZone>
+	</ips>
+</data>

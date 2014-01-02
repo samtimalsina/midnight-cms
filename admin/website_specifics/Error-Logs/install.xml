@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tool>
+	<tool_details>
+		<tool_name>Error Logs</tool_name>
+        <tool_logo>Images/pages.gif</tool_logo>
+        <tool_info>View Logs</tool_info>
+		<version>1.0</version>
+		<author></author>
+        <tool_type>tools</tool_type>
+        <rights>all</rights>
+    </tool_details>
+    
+	<functions>
+    
+        <function>
+			<function_name>IP Logs</function_name>
+			<function_type>table</function_type>
+		</function>
+        
+	</functions>
+</tool>
